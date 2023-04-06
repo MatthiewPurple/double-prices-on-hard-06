@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>normal_prices_on_hard_06</RootNamespace>
-    <AssemblyName>normal_prices_on_hard_06</AssemblyName>
+    <RootNamespace>double_prices_on_hard_06</RootNamespace>
+    <AssemblyName>double_prices_on_hard_06</AssemblyName>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
