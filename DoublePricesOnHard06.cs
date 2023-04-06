@@ -14,8 +14,8 @@ public class DoublePricesOnHard06 : MelonMod
     {
         public static void Postfix(ref int __result)
         {
-            // If on Hard then multiply prices by 1/3
-            if (dds3ConfigMain.cfgGetBit(9u) == 2) __result = __result * 1 / 3;
+            // If on Hard then multiply prices by 2/3
+            if (dds3ConfigMain.cfgGetBit(9u) == 2) __result = __result * 2 / 3;
         }
     }
 }
