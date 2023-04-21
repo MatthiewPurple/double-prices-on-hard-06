@@ -12,10 +12,10 @@ public class NormalPricesOnHard06 : MelonMod
     [HarmonyPatch(typeof(fclShopCalc), nameof(fclShopCalc.shpCalcItemPrice))]
     private class Patch
     {
-        public static void Postfix(ref int __result)
+        public static void Postfix(ref sbyte Mode, ref int __result)
         {
-            // If on Hard then multiply prices by 1/3
-            if (dds3ConfigMain.cfgGetBit(9u) == 2) __result = __result * 1 / 3;
+            // If buying on Hard then multiply prices by 1/3
+            if (Mode == 0 && dds3ConfigMain.cfgGetBit(9u) == 2) __result = __result / 3;
         }
     }
 }
